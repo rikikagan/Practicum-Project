@@ -1,0 +1,104 @@
+<div class="card" *ngIf="editEmployeeForm"> <!-- תנאי לבדיקת מוגדרות טופס -->
+    <mat-dialog-content class="card-content">
+        <h1 class="title">עידכון עובד</h1>
+        <button mat-icon-button mat-dialog-close class="close-button">
+            <mat-icon>close</mat-icon>
+        </button>
+        <form [formGroup]="editEmployeeForm">
+            <div class="container">
+                <div role="dialog" class="row justify-content-end" dir="rtl">
+                    <mat-form-field class="mat input">
+                        <mat-label value="warn">
+                            <mat-icon>person</mat-icon>שם פרטי</mat-label>
+                        <input matInput formControlName="firstName">
+                    </mat-form-field>
+                    <mat-error
+                        *ngIf="editEmployeeForm.get('firstName')?.invalid && editEmployeeForm.get('firstName')?.touched">
+                        שדה חובה
+                    </mat-error>
+                    <mat-form-field class="mat input">
+                        <mat-label value="warn">
+                            <mat-icon>person</mat-icon>שם משפחה</mat-label>
+                        <input matInput formControlName="lastName">
+                    </mat-form-field>
+                    <mat-error
+                        *ngIf="editEmployeeForm.get('lastName')?.invalid && editEmployeeForm.get('lastName')?.touched">
+                        שדה חובה
+                    </mat-error>
+                    <mat-form-field class="mat input">
+                        <mat-label value="warn"> <mat-icon>credit_card</mat-icon>תעודת זהות</mat-label>
+                        <input matInput formControlName="tz">
+                    </mat-form-field>
+                    <mat-error *ngIf="editEmployeeForm.get('tz')?.invalid && editEmployeeForm.get('tz')?.touched">
+                        שדה חובה
+                    </mat-error>
+                    <mat-error *ngIf="editEmployeeForm.get('tz')?.errors?.['minlength']">פחות מ-9 תווים</mat-error>
+                    <mat-error *ngIf="editEmployeeForm.get('tz')?.errors?.['maxlength']">יותר מ-9 תווים</mat-error>
+                    <mat-form-field class="mat input">
+                        <input matInput [matDatepicker]="picker" formControlName="startDate">
+                        <mat-label value="warn"> תאריך תחילת העבודה </mat-label>
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field class="mat input">
+                        <input matInput [matDatepicker]="pickerDateOfBirth" formControlName="dateOfBirth">
+                        <mat-label value="warn"> תאריך לידה </mat-label>
+                        <mat-datepicker-toggle matSuffix [for]="pickerDateOfBirth"></mat-datepicker-toggle>
+                        <mat-datepicker #pickerDateOfBirth></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field class="mat input">
+                        <mat-label> <mat-icon>people</mat-icon>מין</mat-label>
+                        <mat-select formControlName="gender">
+                            <mat-option value="1"> זכר </mat-option>
+                            <mat-option value="2">נקבה</mat-option>
+                        </mat-select>
+                        <div *ngIf="editEmployeeForm.get('gender')!.value === 1; else femaleGender">
+                            זכר
+                        </div>
+                        <ng-template #femaleGender>
+                            נקבה
+                        </ng-template>
+                        <mat-error>
+                            *ngIf="editEmployeeForm.get('gender')?.invalid && editEmployeeForm.get('gender')?.touched">
+                            שדה חובה
+                        </mat-error>
+                    </mat-form-field>
+                    <div formArrayName="roles">
+                        <div *ngFor="let roleLi of roles.controls; let i = index" [formGroupName]="i">
+                            <div class="card">
+                                <mat-form-field class="mat input">
+                                    <mat-label>תפקיד</mat-label>
+                                    <mat-select formControlName="roleId">
+                                        <mat-option *ngFor="let role of roleList" [value]="role.id"
+                                            [disabled]="isRoleSelected(role.id)">{{role.roleName}}</mat-option>
+                                    </mat-select>
+                                    <mat-icon matSuffix>business_center</mat-icon>
+                                </mat-form-field>
+                                <mat-checkbox id="checkbox" formControlName="isManagement">
+                                    <label>תפקיד ניהולי</label>
+                                </mat-checkbox>
+                                <mat-form-field class="mat input">
+                                    <mat-label value="warn"> תאריך כניסה לתפקיד </mat-label>
+                                    <input matInput [matDatepicker]="picker" formControlName="startDate"
+                                        placeholder="תאריך כניסה לתפקיד" [min]="minStartDate">
+                                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker></mat-datepicker>
+                                </mat-form-field>
+                                <button mat-button color="accent" class="button" (click)="removeRole(i)">
+                                    <mat-icon>delete</mat-icon>הסר תפקיד</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button mat-button color="accent" class="button" (click)="addRole()">
+                            <mat-icon>add_box</mat-icon> הוספת תפקיד
+                        </button>
+                        <button mat-button color="accent" class="button" (click)="update()">
+                            <mat-icon>save</mat-icon>עידכון
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </mat-dialog-content>
+</div>

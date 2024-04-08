@@ -1,0 +1,184 @@
+table {
+  width: 100%;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+.table-container {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.table-container table tr:hover {
+  background-color: lightgray;
+}
+
+.mat-mdc-raised-button.mat-accent {
+  --mdc-protected-button-container-color: #FE8B20;
+  --mdc-protected-button-label-text-color: white;
+  --mat-protected-button-state-layer-color: white;
+  --mat-protected-button-ripple-color: rgba(255, 255, 255, 0.1);
+}
+
+.paginator {
+  
+  margin-right: 62%;
+  margin-bottom: 1%;
+}
+
+.mat-table {
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+th {
+  font-weight: bold;
+}
+
+.allButton {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.button {
+  margin-left: 5%;
+}
+
+.mat-dialog-container {
+  background: transparent;
+}
+
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  padding: 4px 40px;
+}
+
+.example-card {
+  max-width: 400px;
+  margin: 15px;
+}
+
+.example-header-image {
+  background-image: url('https://via.placeholder.com/150');
+  background-size: cover;
+}
+
+.search-input[_ngcontent-ng-c80500916] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  direction: rtl;
+  flex: 1;
+}
+
+.search-button:active {
+  background-color: #FE8B20;
+}
+
+.search-input {
+  direction: rtl;
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+  flex: 1;
+  outline: none;
+
+}
+
+
+
+.search-button {
+  background-color: #FE8B20;
+  color: white;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: -45%;
+  margin-left: -80%;
+}
+
+.separator {
+  margin: 0 5px;
+  /* כדי ליצור מרחק בין ה- input */
+  color: gray;
+  /* צבע פס הדק */
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* רקע אטום עם הערפל */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  /* כדי שיופיע מעל כל הרקעים */
+}
+
+.mat-mdc-progress-bar {
+  --mdc-linear-progress-active-indicator-color: #FE8B20;
+  --mdc-linear-progress-track-color: rgba(103, 58, 183, 0.25);
+}
+
+.mat-mdc-progress-spinner {
+  --mdc-circular-progress-active-indicator-color: #FE8B20;
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* Adjust styling for smaller screens */
+  .search-input-wrapper {
+    flex-direction: column;
+  }
+
+  .search-input {
+    font-size: small;
+    width: 100%;
+  }
+
+  .button {
+    font-size: small;
+    width: 100%;
+    margin-left: 2%;
+
+  }
+
+  .allButton {
+    width: 100%;
+    margin-left: 5%;
+  }
+
+  .table-container {
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .mat-table {
+    width: 100%;
+  }
+
+  .mat-paginator {
+    width: 100%;
+  }
+
+}

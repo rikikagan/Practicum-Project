@@ -1,0 +1,49 @@
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    direction: rtl;
+
+}
+
+.card-content {
+    text-align: center;
+    max-height: 500px;
+    /* גובה מקסימלי לתכולת הכרטיס */
+}
+
+.close-button button {
+    width: 100%;
+    height: 100%;
+    background-color: #FE8B20;
+}
+
+/* הכפתור יהיה חצי מחוץ לטופס וחצי על הטופס */
+.close-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    /* כדי שהכפתור יעמוד מעל הטופס */
+}
+
+.title {
+    color: #000000;
+    text-align: center;
+}
+
+.button {
+    size: 10%;
+    margin-top: 2%;
+    margin-right: 25%;
+    border: #FE8B20;
+}
+
+.mat-mdc-raised-button.mat-accent {
+    --mdc-protected-button-container-color: #FE8B20;
+    --mdc-protected-button-label-text-color: white;
+    --mat-protected-button-state-layer-color: white;
+    --mat-protected-button-ripple-color: rgba(255, 255, 255, 0.1);
+}

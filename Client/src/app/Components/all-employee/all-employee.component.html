@@ -1,0 +1,81 @@
+<mat-progress-bar mode="determinate"  [value]="getProgressBarValue()"></mat-progress-bar>
+<div *ngIf="this.isLoading==false" class="allButton">
+    <form [formGroup]="searchForm">
+      <div class="search-input-wrapper">
+        <button mat-icon-button (click)="applyFilter()">
+          <mat-icon class="search-button">search</mat-icon>
+        </button>
+        <mat-icon class="clear-icon" (click)="clearSearchFieldLastName(firstName)">clear</mat-icon>
+        <input #firstName type="text" placeholder="שם משפחה" class="search-input" formControlName="searchLastName" >
+        <span class="separator">|</span>
+        <mat-icon class="clear-icon" (click)="clearSearchFieldFirstName(lastName)">clear</mat-icon>
+        <input #lastName type="text" placeholder="שם פרטי" class="search-input" formControlName="searchFirstName">
+      </div>
+    </form>
+    <button mat-raised-button color="accent" class="button" (click)="exportToExcel()">
+      <mat-icon>insert_drive_file</mat-icon> ייצוא ל-אקסל
+    </button>
+    <button mat-raised-button color="accent" class="button" (click)="addEmployee()">
+      <mat-icon>person_add</mat-icon> הוספת עובד לעסק
+    </button>
+    <button mat-raised-button color="accent" class="button" (click)="addRole()">
+      <mat-icon>playlist_add</mat-icon> הוספת תפקיד לעסק
+    </button>
+  </div>
+  <div class="table-container">
+    <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+      <!-- First Name Column -->
+      <ng-container matColumnDef="firstName" sticky>
+        <th mat-header-cell *matHeaderCellDef>
+          שם פרטי
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
+      </ng-container>
+      <!-- Last Name Column -->
+      <ng-container matColumnDef="lastName" sticky>
+        <th mat-header-cell *matHeaderCellDef>
+          שם משפחה
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+      </ng-container> 
+      <!-- TZ Column -->
+      <ng-container matColumnDef="tz" sticky>
+        <th mat-header-cell *matHeaderCellDef class="title">
+          תעודת זהות
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.tz}} </td>
+      </ng-container>
+      <!-- Start Date Column -->
+      <ng-container matColumnDef="startDate" sticky>
+        <th mat-header-cell *matHeaderCellDef>
+          תאריך תחילת העבודה
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.startDate| customDate}} </td>
+      </ng-container>
+      <ng-container matColumnDef="editDelete">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element">
+          <button mat-icon-button  (click)="editEmployee(element)">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button (click)="deleteEmployee(element)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+      <!-- Define the columns to display -->
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>  
+  </div>
+  <div class="paginator">
+    <mat-paginator [length]="100"
+    [pageSize]="8"
+    [pageSizeOptions]="[5, 10, 25, 100]"
+    aria-label="Select page" >
+    </mat-paginator>
+  </div>
+  <div *ngIf="this.isLoading" class="loading-overlay">
+    <mat-spinner></mat-spinner>
+  </div>
+

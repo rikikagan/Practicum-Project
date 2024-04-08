@@ -1,0 +1,20 @@
+<div class="card" *ngIf="addRole"> <!-- תנאי לבדיקת מוגדרות טופס -->
+    <mat-dialog-content class="card-content">
+        <button mat-icon-button mat-dialog-close class="close-button">
+            <mat-icon>close</mat-icon>
+        </button>
+        <h1 class="title">הוספת תפקיד</h1>
+        <form [formGroup]="addRole">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <mat-form-field class="mat input">
+                        <mat-label value="warn">שם פרטי</mat-label>
+                        <input matInput formControlName="roleName">
+                    </mat-form-field>
+                    <button mat-raised-button color="accent" class="button" (click)="addNewRole()">הוספה
+                    </button>
+                </div>
+            </div>
+        </form>
+    </mat-dialog-content>
+</div>

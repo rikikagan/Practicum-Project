@@ -1,0 +1,115 @@
+
+  .form{
+    width: 40%;
+    margin-left: 50%;
+  }
+ 
+.title{
+  color: #FE8B20 ;
+  text-align: center;
+}
+/* .mat-mdc-raised-button.mat-accent {
+  --mdc-protected-button-container-color: #FE8B20;
+  --mdc-protected-button-label-text-color: white;
+  --mat-protected-button-state-layer-color: white;
+  --mat-protected-button-ripple-color: rgba(255, 255, 255, 0.1);
+} */
+/* .mat-mdc-button:not(:disabled) {
+  color: var(--mdc-text-button-label-text-color);
+} */
+.mat-mdc-button.mat-accent {
+  --mdc-text-button-label-text-color: #FE8B20;
+  --mat-text-button-state-layer-color: #FE8B20;
+  --mat-text-button-ripple-color: rgba(255, 64, 129, 0.1);
+}
+.mat-mdc-snack-bar-container .mat-mdc-button.mat-mdc-snack-bar-action:not(:disabled) {
+  color: var(--mat-snack-bar-button-color);
+  --mat-text-button-state-layer-color: currentColor;
+  --mat-text-button-ripple-color: currentColor;
+}
+.orange-snackbar{
+  color: #FE8B20;
+  margin-bottom: 10%;
+}
+.button{
+  size: 8%;
+  margin-top: 2%;
+  margin-right: 2%;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* border-radius: 8px; */
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  direction: rtl;
+
+}
+
+.card-content {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#checkbox {
+    --mdc-checkbox-disabled-selected-icon-color: rgba(0, 0, 0, 0.38);
+    --mdc-checkbox-disabled-unselected-icon-color: rgba(0, 0, 0, 0.38);
+    --mdc-checkbox-selected-checkmark-color: white;
+    --mdc-checkbox-selected-focus-icon-color: #FE8B20;
+    --mdc-checkbox-selected-hover-icon-color: #FE8B20;
+    --mdc-checkbox-selected-icon-color: #FE8B20;
+    --mdc-checkbox-selected-pressed-icon-color:#FE8B20;
+    --mdc-checkbox-unselected-focus-icon-color: #212121;
+    --mdc-checkbox-unselected-hover-icon-color: #212121;
+    --mdc-checkbox-unselected-icon-color: rgba(0, 0, 0, 0.54);
+    --mdc-checkbox-unselected-pressed-icon-color: rgba(0, 0, 0, 0.54);
+    --mdc-checkbox-selected-focus-state-layer-color: #ff4081;
+    --mdc-checkbox-selected-hover-state-layer-color: #ff4081;
+    --mdc-checkbox-selected-pressed-state-layer-color: #ff4081;
+    --mdc-checkbox-unselected-focus-state-layer-color: black;
+    --mdc-checkbox-unselected-hover-state-layer-color: black;
+    --mdc-checkbox-unselected-pressed-state-layer-color: black;
+    --mat-checkbox-disabled-label-color: rgba(0, 0, 0, 0.38);
+}
+.card-content {
+  max-height: 500px; /* גובה מקסימלי לתכולת הכרטיס */
+  /* overflow-y: auto;  */
+ /* padding: 20px;  */
+}
+
+.close-button button {
+  background-color: #FE8B20;
+}
+
+/* הכפתור יהיה חצי מחוץ לטופס וחצי על הטופס */
+.close-button {
+  /* width: 2%;
+  height: 5%; */
+  background-color: #FE8B20;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* transform: translate(-50%, -50%); */
+  z-index: 9999; /* כדי שהכפתור יעמוד מעל הטופס */
+}
+
+
+
+
+
+
+
+
+
+
+

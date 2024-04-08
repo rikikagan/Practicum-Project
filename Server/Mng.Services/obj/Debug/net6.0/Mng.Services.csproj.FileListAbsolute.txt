@@ -1,0 +1,91 @@
+Y:\teachers for hitmachut\Malka Bruk\Group2\Practicum\Mng\Mng.Services\bin\Debug\net6.0\Mng.Services.deps.json
+Y:\teachers for hitmachut\Malka Bruk\Group2\Practicum\Mng\Mng.Services\bin\Debug\net6.0\Mng.Services.dll
+Y:\teachers for hitmachut\Malka Bruk\Group2\Practicum\Mng\Mng.Services\bin\Debug\net6.0\Mng.Services.pdb
+Y:\teachers for hitmachut\Malka Bruk\Group2\Practicum\Mng\Mng.Services\bin\Debug\net6.0\Mng.Core.dll
+Y:\teachers for hitmachut\Malka Bruk\Group2\Practicum\Mng\Mng.Services\bin\Debug\net6.0\Mng.Core.pdb
+Y:\teachers for hitmachut\Malka Bruk\Group2\Practicum\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.csproj.AssemblyReference.cache
+Y:\teachers for hitmachut\Malka Bruk\Group2\Practicum\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.GeneratedMSBuildEditorConfig.editorconfig
+Y:\teachers for hitmachut\Malka Bruk\Group2\Practicum\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.AssemblyInfoInputs.cache
+Y:\teachers for hitmachut\Malka Bruk\Group2\Practicum\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.AssemblyInfo.cs
+Y:\teachers for hitmachut\Malka Bruk\Group2\Practicum\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.csproj.CoreCompileInputs.cache
+Y:\teachers for hitmachut\Malka Bruk\Group2\Practicum\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.csproj.CopyComplete
+Y:\teachers for hitmachut\Malka Bruk\Group2\Practicum\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.dll
+Y:\teachers for hitmachut\Malka Bruk\Group2\Practicum\Mng\Mng.Services\obj\Debug\net6.0\refint\Mng.Services.dll
+Y:\teachers for hitmachut\Malka Bruk\Group2\Practicum\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.pdb
+Y:\teachers for hitmachut\Malka Bruk\Group2\Practicum\Mng\Mng.Services\obj\Debug\net6.0\ref\Mng.Services.dll
+C:\Users\user1\Downloads\jm_mtQBoJHu_UiYBlh\Mng\Mng.Services\bin\Debug\net6.0\Mng.Services.deps.json
+C:\Users\user1\Downloads\jm_mtQBoJHu_UiYBlh\Mng\Mng.Services\bin\Debug\net6.0\Mng.Services.dll
+C:\Users\user1\Downloads\jm_mtQBoJHu_UiYBlh\Mng\Mng.Services\bin\Debug\net6.0\Mng.Services.pdb
+C:\Users\user1\Downloads\jm_mtQBoJHu_UiYBlh\Mng\Mng.Services\bin\Debug\net6.0\Mng.Core.dll
+C:\Users\user1\Downloads\jm_mtQBoJHu_UiYBlh\Mng\Mng.Services\bin\Debug\net6.0\Mng.Core.pdb
+C:\Users\user1\Downloads\jm_mtQBoJHu_UiYBlh\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.csproj.AssemblyReference.cache
+C:\Users\user1\Downloads\jm_mtQBoJHu_UiYBlh\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Downloads\jm_mtQBoJHu_UiYBlh\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.AssemblyInfoInputs.cache
+C:\Users\user1\Downloads\jm_mtQBoJHu_UiYBlh\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.AssemblyInfo.cs
+C:\Users\user1\Downloads\jm_mtQBoJHu_UiYBlh\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.csproj.CoreCompileInputs.cache
+C:\Users\user1\Downloads\jm_mtQBoJHu_UiYBlh\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.csproj.CopyComplete
+C:\Users\user1\Downloads\jm_mtQBoJHu_UiYBlh\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.dll
+C:\Users\user1\Downloads\jm_mtQBoJHu_UiYBlh\Mng\Mng.Services\obj\Debug\net6.0\refint\Mng.Services.dll
+C:\Users\user1\Downloads\jm_mtQBoJHu_UiYBlh\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.pdb
+C:\Users\user1\Downloads\jm_mtQBoJHu_UiYBlh\Mng\Mng.Services\obj\Debug\net6.0\ref\Mng.Services.dll
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\Mng\Mng.Services\bin\Debug\net6.0\Mng.Services.deps.json
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\Mng\Mng.Services\bin\Debug\net6.0\Mng.Services.dll
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\Mng\Mng.Services\bin\Debug\net6.0\Mng.Services.pdb
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\Mng\Mng.Services\bin\Debug\net6.0\Mng.Core.dll
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\Mng\Mng.Services\bin\Debug\net6.0\Mng.Core.pdb
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.csproj.AssemblyReference.cache
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.AssemblyInfoInputs.cache
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.AssemblyInfo.cs
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.csproj.CoreCompileInputs.cache
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.csproj.CopyComplete
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.dll
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\Mng\Mng.Services\obj\Debug\net6.0\refint\Mng.Services.dll
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.pdb
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\Mng\Mng.Services\obj\Debug\net6.0\ref\Mng.Services.dll
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\Mng\Mng.Services\obj\Debug\net6.0\Mng.Services.sourcelink.json
+C:\Users\user1\Downloads\MngFinalProject-m\MngFinalProject-m\Mng.Services\bin\Debug\net6.0\Mng.Services.deps.json
+C:\Users\user1\Downloads\MngFinalProject-m\MngFinalProject-m\Mng.Services\bin\Debug\net6.0\Mng.Services.dll
+C:\Users\user1\Downloads\MngFinalProject-m\MngFinalProject-m\Mng.Services\bin\Debug\net6.0\Mng.Services.pdb
+C:\Users\user1\Downloads\MngFinalProject-m\MngFinalProject-m\Mng.Services\bin\Debug\net6.0\Mng.Core.dll
+C:\Users\user1\Downloads\MngFinalProject-m\MngFinalProject-m\Mng.Services\bin\Debug\net6.0\Mng.Core.pdb
+C:\Users\user1\Downloads\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.csproj.AssemblyReference.cache
+C:\Users\user1\Downloads\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Downloads\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.AssemblyInfoInputs.cache
+C:\Users\user1\Downloads\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.AssemblyInfo.cs
+C:\Users\user1\Downloads\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.csproj.CoreCompileInputs.cache
+C:\Users\user1\Downloads\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.csproj.CopyComplete
+C:\Users\user1\Downloads\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.dll
+C:\Users\user1\Downloads\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\refint\Mng.Services.dll
+C:\Users\user1\Downloads\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.pdb
+C:\Users\user1\Downloads\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\ref\Mng.Services.dll
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\bin\Debug\net6.0\Mng.Services.deps.json
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\bin\Debug\net6.0\Mng.Services.dll
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\bin\Debug\net6.0\Mng.Services.pdb
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\bin\Debug\net6.0\Mng.Core.dll
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\bin\Debug\net6.0\Mng.Core.pdb
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.csproj.AssemblyReference.cache
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.AssemblyInfoInputs.cache
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.AssemblyInfo.cs
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.csproj.CoreCompileInputs.cache
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.csproj.CopyComplete
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.dll
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\refint\Mng.Services.dll
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.pdb
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\עובד טוב\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\ref\Mng.Services.dll
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\bin\Debug\net6.0\Mng.Services.deps.json
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\bin\Debug\net6.0\Mng.Services.dll
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\bin\Debug\net6.0\Mng.Services.pdb
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\bin\Debug\net6.0\Mng.Core.dll
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\bin\Debug\net6.0\Mng.Core.pdb
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.csproj.AssemblyReference.cache
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.AssemblyInfoInputs.cache
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.AssemblyInfo.cs
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.csproj.CoreCompileInputs.cache
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.csproj.CopyComplete
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.dll
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\refint\Mng.Services.dll
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\Mng.Services.pdb
+C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\obj\Debug\net6.0\ref\Mng.Services.dll
