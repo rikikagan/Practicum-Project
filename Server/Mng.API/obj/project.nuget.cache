@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "un9momKOGb68ShbRc91eh2WyHjY5mpIKNHikd9V+C5yaTT3Qw68sBSMre0yYep5O4EzuNFraA/07ZpE05i28jw==",
+  "dgSpecHash": "8U8DWzw1s3kn5Qtb9SajEEPNg3QHT3vneEnq4m6wra7YmEWtF7HJIO8AU3mcrF++a/hx4JgRiwYFko8eJzeIRA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\MngFinalProject-m\\MngFinalProject-m\\Mng.API\\Mng.API.csproj",
+  "projectFilePath": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\Server\\Mng.API\\Mng.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user1\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

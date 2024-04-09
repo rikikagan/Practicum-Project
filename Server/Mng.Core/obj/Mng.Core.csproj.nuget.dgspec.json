@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\MngFinalProject-m\\MngFinalProject-m\\Mng.Core\\Mng.Core.csproj": {}
+    "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\Server\\Mng.Core\\Mng.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\MngFinalProject-m\\MngFinalProject-m\\Mng.Core\\Mng.Core.csproj": {
+    "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\Server\\Mng.Core\\Mng.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\MngFinalProject-m\\MngFinalProject-m\\Mng.Core\\Mng.Core.csproj",
+        "projectUniqueName": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\Server\\Mng.Core\\Mng.Core.csproj",
         "projectName": "Mng.Core",
-        "projectPath": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\MngFinalProject-m\\MngFinalProject-m\\Mng.Core\\Mng.Core.csproj",
+        "projectPath": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\Server\\Mng.Core\\Mng.Core.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\MngFinalProject-m\\MngFinalProject-m\\Mng.Core\\obj\\",
+        "outputPath": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\Server\\Mng.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

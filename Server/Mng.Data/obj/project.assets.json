@@ -2069,11 +2069,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\MngFinalProject-m\\MngFinalProject-m\\Mng.Data\\Mng.Data.csproj",
+      "projectUniqueName": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\Server\\Mng.Data\\Mng.Data.csproj",
       "projectName": "Mng.Data",
-      "projectPath": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\MngFinalProject-m\\MngFinalProject-m\\Mng.Data\\Mng.Data.csproj",
+      "projectPath": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\Server\\Mng.Data\\Mng.Data.csproj",
       "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\MngFinalProject-m\\MngFinalProject-m\\Mng.Data\\obj\\",
+      "outputPath": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\Server\\Mng.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2095,8 +2095,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\MngFinalProject-m\\MngFinalProject-m\\Mng.Core\\Mng.Core.csproj": {
-              "projectPath": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\MngFinalProject-m\\MngFinalProject-m\\Mng.Core\\Mng.Core.csproj"
+            "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\Server\\Mng.Core\\Mng.Core.csproj": {
+              "projectPath": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\Server\\Mng.Core\\Mng.Core.csproj"
             }
           }
         }

@@ -49,6 +49,18 @@ namespace Mng.Data.Repositories
             {
                 throw new ArgumentException("Employee already has a role with the same role");
             }
+
+
+            // בדיקה שהתאריך של תחילת העבודה של העובד הוא לפני תאריך תחילת העבודה של התפקיד
+            var roleStartDate = await _context.EmployeeRoles
+                .Where(er => er.EmployeeId == empRole.EmployeeId && er.RoleId == empRole.RoleId)
+                .Select(er => er.StartDate)
+                .FirstOrDefaultAsync();
+
+            if (roleStartDate != default && empRole.StartDate < roleStartDate)
+            {
+                throw new ArgumentException("Role start date cannot be before employee start date");
+            }
             _context.EmployeeRoles.Add(empRole);
             await _context.SaveChangesAsync();
             return empRole;

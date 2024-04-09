@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Mng.Services
-build_property.ProjectDir = C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\MngAngular\MngFinalProject-m\MngFinalProject-m\Mng.Services\
+build_property.ProjectDir = C:\Users\user1\Documents\תיכנות ו\פרויקט גמר בסד\MngAngular\Server\Mng.Services\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

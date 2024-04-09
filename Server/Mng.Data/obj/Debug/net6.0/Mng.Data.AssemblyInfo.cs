@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mng.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06c7a8df01c4f96f7037d55f38330a4d5cb0c33c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mng.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mng.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

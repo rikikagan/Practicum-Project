@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z86BB0fkHP5UBk3M6rD68tZLbW4PzCiXFojOyh7EFL05VoET+JGY8JdBiyW5nokfLq09T/Om0U/C8O3a4UOZUg==",
+  "dgSpecHash": "NbkwGNkj9VlURcCO5R69+J0B524Fy6ISFfNvlWZ3kQKBaUxwg4mAJKBSHrpwnYmi+TA8cgNt32Zv0gqcwNrpIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\MngFinalProject-m\\MngFinalProject-m\\Mng.Data\\Mng.Data.csproj",
+  "projectFilePath": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\Server\\Mng.Data\\Mng.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user1\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

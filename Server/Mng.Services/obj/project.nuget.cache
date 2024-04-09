@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jXcuz7BZYf6jE8GkTRuv8/mG58nkKie9PnqThOZrV6Nuh7UABzYB3IZzpTV3NyPAaTWEjDaX0HpxzxEc265dxw==",
+  "dgSpecHash": "ls8rMtzH+OXNcBTF+i1/5OhonqL1sibbmUNyoysoxpd1p5yX+H4RlHFjl4gYSaImXJBPK1AOpd6Cj4IG5rLxPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\MngFinalProject-m\\MngFinalProject-m\\Mng.Services\\Mng.Services.csproj",
+  "projectFilePath": "C:\\Users\\user1\\Documents\\תיכנות ו\\פרויקט גמר בסד\\MngAngular\\Server\\Mng.Services\\Mng.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user1\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"

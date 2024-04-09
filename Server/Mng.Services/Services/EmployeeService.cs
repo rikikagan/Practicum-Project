@@ -26,9 +26,22 @@ namespace Mng.Service.Services
         }
         public async Task<Employee> AddAsync(Employee employee)
         {
+            if (!IsValidEmployeeId(employee.TZ))
+                throw new Exception("Invalid employee data.");
+            if (IsDuplicateEmployeeId(employee.TZ))
+                throw new Exception("Employee width the same identity number already exists");
             return await _employeeRepository.AddAsync(employee);
         }
 
+        private bool IsValidEmployeeId(string tz)
+        {
+            return !string.IsNullOrEmpty(tz) && tz.Length == 9 && int.TryParse(tz, out _);
+        }
+        private bool IsDuplicateEmployeeId(string tz)
+        {
+            var existingEmployee = _employeeRepository.GetListAsync().Result.FirstOrDefault(e => e.TZ == tz);
+            return existingEmployee != null && existingEmployee.ActivityStatus == true;
+        }
         public async Task DeleteAsync(int employeeId)
         {
             await _employeeRepository.DeleteAsync(employeeId);

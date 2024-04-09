@@ -5,7 +5,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms'; // הוספת ReactiveFormsModule
 import { CommonModule } from '@angular/common';
-import { MatSelectModule } from '@angular/material/select';
+import { MatSelectChange, MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatNativeDateModule } from '@angular/material/core';
@@ -41,6 +41,7 @@ export class EditEmployeeComponent implements OnInit {
   public minStartDate!: Date;
   public roleList: Role[] = [];
   public roleExists: EmployeeRoles[] = [];
+  
   constructor(
     private roleService: RoleService,private employeeService: EmployeeService,
     private fb: FormBuilder,private employeeRoleService: EmployeeRoleService,@Inject(MAT_DIALOG_DATA) public data: any,
@@ -77,7 +78,7 @@ export class EditEmployeeComponent implements OnInit {
     this.editEmployeeForm = this.fb.group({
       firstName: [this.employee?.firstName, [Validators.required]],
       lastName: [this.employee?.lastName, [Validators.required]],
-      tz: [this.employee?.tz, [Validators.required, Validators.minLength(9), Validators.maxLength(9)]],
+      tz: [this.employee?.tz, [Validators.required, Validators.minLength(9), Validators.maxLength(9),Validators.pattern('^[0-9]*$')]],
       startDate: [this.employee?.startDate, [Validators.required]],
       dateOfBirth: [this.employee?.dateOfBirth, [Validators.required, validateBirthDate]],
       roles: this.fb.array([], [validateUniqueRoles()]),
@@ -150,9 +151,20 @@ export class EditEmployeeComponent implements OnInit {
     const uniqueRoleIds = new Set(selectedRolesIds);
     return selectedRolesIds.length !== uniqueRoleIds.size;
   }
+  hasRoleStartDateBeforeHireDate(): boolean {
+    const roles = this.editEmployeeForm.value.roles;
+    const hireDate = new Date(this.editEmployeeForm.value.startDate);
+    for (const role of roles) {
+      const roleStartDate = new Date(role.startDate);
+      if (roleStartDate < hireDate) {
+        return true;
+      }
+    } 
+    return false;
+  }
   // עדכון פרטי העובד
   update(): void {
-    if (this.editEmployeeForm.valid) {
+    if (this.editEmployeeForm.valid&&!this.hasRoleStartDateBeforeHireDate()) {
       const employeeData = this.editEmployeeForm.value;
       const updatedEmployee: Employee = {
         id: this.employeeId,
@@ -173,7 +185,6 @@ export class EditEmployeeComponent implements OnInit {
               isManagement: role.isManagement,
               employeeId: this.employeeId
             };
-            console.log(' employeeData.roles', employeeData.roles.isManagement)
             if (Array.isArray(employeeData.roles)) {
               const existingRole = this.employeeRoles.find(r => r.id === role.id);
               if (existingRole) {
@@ -211,6 +222,15 @@ export class EditEmployeeComponent implements OnInit {
         // התראה אם קיימים תפקידים כפולים
         this.showSuccessSnackBar('ישנם תפקידים כפולים, אנא בדוק שוב את התפקידים שלך', 'סגור');
         return;
+      }
+      if(this.hasRoleStartDateBeforeHireDate())
+        {
+          this.showSuccessSnackBar('תאריך תחילת התפקיד מוקדם מתאריך תחילת העובד', 'סגור');
+          return;
+      }
+      else{
+      this.showSuccessSnackBar('מלא את כל השדות', 'סגור');
+      return;
       }
     }
   }
