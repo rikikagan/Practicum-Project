@@ -105,9 +105,20 @@ export class AddEmployeeComponent {
     const uniqueRoleIds = new Set(selectedRolesIds);
     return selectedRolesIds.length !== uniqueRoleIds.size;
   }
+  hasRoleStartDateBeforeHireDate(): boolean {
+    const roles = this.addEmployeeForm.value.roles;
+    const hireDate = new Date(this.addEmployeeForm.value.startDate);
+    for (const role of roles) {
+      const roleStartDate = new Date(role.startDate);
+      if (roleStartDate < hireDate) {
+        return true;
+      }
+    } 
+    return false;
+  }
   // פונקציה להוספת עובד חדש
   addNewEmployee() {
-    if (this.addEmployeeForm.valid) {
+    if (this.addEmployeeForm.valid&&!this.hasRoleStartDateBeforeHireDate()) {
       const employeeData = this.addEmployeeForm.value;
       let newEmployee: Employee = {
         id: 0,
@@ -155,6 +166,11 @@ export class AddEmployeeComponent {
         // התראה אם קיימים תפקידים כפולים
         this.showSuccessSnackBar('ישנם תפקידים כפולים, אנא בדוק שוב את התפקידים שלך', 'סגור');
         return;
+      }
+      if(this.hasRoleStartDateBeforeHireDate())
+        {
+          this.showSuccessSnackBar('תאריך תחילת התפקיד מוקדם מתאריך תחילת העובד', 'סגור');
+          return;
       }
       else {
         this.showSuccessSnackBar('נא מלא את כל השדות', 'סגור');
