@@ -7,8 +7,7 @@ import { EmployeeRoles } from '../Models/EmployeeRolesModel';
   providedIn: 'root'
 })
 export class EmployeeRoleService {
-    constructor(private _http: HttpClient) { }
-   
+    constructor(private _http: HttpClient) { }  
     getEmployeeRolesList(): Observable<EmployeeRoles[]> {
       return this._http.get<EmployeeRoles[]>('https://localhost:7149/api/EmployeeRole')
     }
