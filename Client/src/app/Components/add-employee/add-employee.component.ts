@@ -147,7 +147,7 @@ export class AddEmployeeComponent {
             this.employeeRoleService.addEmployeeRole(newEmployeeRole).subscribe({
               next: (res) => {
                 this.responseData = res;
-                newEmployeeRole.id = this.responseData.id;
+                newEmployeeRole.id = this.responseData.id;    
               },
               error: (err) => {
                 console.error('Error adding employee:', err);

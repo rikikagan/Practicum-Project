@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mng.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d2ed60b38a6fe922ebbf2cb4e5713311e3768e5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e176fbd6e37d1d70ee689caf8acab6dbc0a680f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mng.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mng.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -110,7 +110,7 @@ export class AllEmployeeComponent implements AfterViewInit {
     dialogRef.afterOpened().subscribe(() => {
       this.isLoading = false; // מצב טעינה מסתיים כאשר הדיאלוג נפתח
     });
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe(() => {
       this.getEmployees(); // רענון רשימת העובדים לאחר סגירת הדיאלוג
     });
   }
@@ -124,7 +124,20 @@ export class AllEmployeeComponent implements AfterViewInit {
     dialogRef.afterOpened().subscribe(() => {
       this.isLoading = false; // מצב טעינה מסתיים כאשר הדיאלוג נפתח
     });
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe(()=> {
+      this.getEmployees(); // רענון רשימת העובדים לאחר סגירת הדיאלוג
+    });
+  }
+    // הוספת עובד
+  addEmployee() {
+    this.isLoading = true; // מצב טעינה מתחיל עד שהדיאלוג נפתח
+    const dialogRef = this.dialog.open(AddEmployeeComponent, {
+      disableClose: true,
+    });
+    dialogRef.afterOpened().subscribe(() => {
+      this.isLoading = false; // מצב טעינה מסתיים כאשר הדיאלוג נפתח
+    });
+    dialogRef.afterClosed().subscribe(() => {
       this.getEmployees(); // רענון רשימת העובדים לאחר סגירת הדיאלוג
     });
   }
@@ -146,25 +159,12 @@ export class AllEmployeeComponent implements AfterViewInit {
     a.click();
     document.body.removeChild(a);
   }
-  // הוספת עובד
-  addEmployee() {
-    this.isLoading = true; // מצב טעינה מתחיל עד שהדיאלוג נפתח
-    const dialogRef = this.dialog.open(AddEmployeeComponent, {
-      disableClose: true,
-    });
-    dialogRef.afterOpened().subscribe(() => {
-      this.isLoading = false; // מצב טעינה מסתיים כאשר הדיאלוג נפתח
-    });
-    dialogRef.afterClosed().subscribe(result => {
-      this.getEmployees(); // רענון רשימת העובדים לאחר סגירת הדיאלוג
-    });
-  }
   // הוספת תפקיד
   addRole() {
     const dialogRef = this.dialog.open(AddRoleComponent, {
       disableClose: true,
     });
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe(() => {
       this.getEmployees(); // רענון רשימת העובדים לאחר סגירת הדיאלוג
     });
   }
