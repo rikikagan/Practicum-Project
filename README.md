@@ -29,7 +29,7 @@ The application displays a list of employees in a table format and provides opti
 - Run the following command to install dependencies:
   <kbd style="background-color: #f0f0f0; padding: 2px 5px; border-radius: 3px;">npm install</kbd>
 - After installing dependencies, start the Angular development server using:
-  <kbd style="background-color: #f0f0f0; padding: 2px 5px; border-radius: 3px;">npm start</kbd>
+  <kbd style="background-color: #f0f0f0; padding: 2px 5px; border-radius: 3px;">ng serve</kbd>
 
 ## 3. Accessing the Application
 
