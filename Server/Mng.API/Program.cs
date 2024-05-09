@@ -23,12 +23,7 @@ builder.Services.AddControllers().AddJsonOptions(options =>
     options.JsonSerializerOptions.WriteIndented = true;
 });
 ConfigurationManager configuration = builder.Configuration;
-///מוסיפ את האפשרות להשתמש במסד נתונים 
-builder.Services.AddDbContext<DataContext>(option =>
-{
-    ///הגדרתי לאיזה DB להתחבר 
-    option.UseSqlServer(configuration.GetConnectionString("RikiKaganProjectApi"));
-});
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -55,7 +50,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
 
 app.UseHttpsRedirection();
 app.UseCors();

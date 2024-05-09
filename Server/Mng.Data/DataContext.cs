@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Mng.Core.Entities;
 using System;
 using System.Collections.Generic;
@@ -11,17 +12,17 @@ namespace Mng.Data
 {
     public class DataContext : DbContext
     {
-
-        public DataContext(DbContextOptions<DataContext> options) : base(options)
+        private readonly IConfiguration _configuration;
+        public DataContext(IConfiguration configuration)
         {
-
+            _configuration = configuration;
         }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<EmployeeRoles> EmployeeRoles { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //optionsBuilder.UseSqlServer("Data Source=DESKTOP-49VMUKQ;Initial Catalog=MngProject;Integrated Security=true; TrustServerCertificate=True; Encrypt=False;");
+            optionsBuilder.UseSqlServer(_configuration["DbConnectionString"]);
             optionsBuilder.LogTo((message) => Debug.Write(message));
         }
        
