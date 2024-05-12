@@ -130,6 +130,7 @@ export class EditEmployeeComponent implements OnInit {
         next: (res) => {
           this.roles.removeAt(index);
           this.employeeRoles = this.editEmployeeForm?.value.roles;
+          
         },
         error: (err) => {
           console.log('removeRole', err);

@@ -32,6 +32,9 @@
                     </mat-error>
                     <mat-error dir="rtl" *ngIf="addEmployeeForm.get('tz')?.errors?.['minlength']">פחות מ-9 תווים</mat-error>
                     <mat-error dir="rtl" *ngIf="addEmployeeForm.get('tz')?.errors?.['maxlength']">יותר מ-9 תווים</mat-error>
+                    <mat-error *ngIf="addEmployeeForm.controls['tz'].hasError('pattern')">
+                        תעודת זהות חייבת להיות מספרים בלבד
+                      </mat-error>
                     <mat-form-field class="mat input">
                         <input matInput [matDatepicker]="picker" formControlName="startDate">
                         <mat-label value="warn"> תאריך תחילת העבודה </mat-label>

@@ -60,7 +60,7 @@ export class AddEmployeeComponent {
     this.addEmployeeForm = this.fb.group({
       firstName: ['', [Validators.required]],
       lastName: ['', [Validators.required]],
-      tz: ['', [Validators.required, Validators.minLength(9), Validators.maxLength(9)]],
+      tz: ['', [Validators.required,Validators.pattern(/^\d+$/), Validators.minLength(9), Validators.maxLength(9)]],
       startDate: [today, [Validators.required]],
       dateOfBirth: [minBirthDate, [Validators.required, validateBirthDate]],
       roles: this.fb.array([], [validateUniqueRoles()]), // Initialize roles as empty array
@@ -117,7 +117,7 @@ export class AddEmployeeComponent {
     return false;
   }
   // פונקציה להוספת עובד חדש
-  addNewEmployee() {
+ async addNewEmployee() {
     if (this.addEmployeeForm.valid&&!this.hasRoleStartDateBeforeHireDate()) {
       const employeeData = this.addEmployeeForm.value;
       let newEmployee: Employee = {
@@ -130,11 +130,16 @@ export class AddEmployeeComponent {
         gender: parseInt(employeeData.gender)
       };
       // לולאה להוספת תפקידים לעובד
-      this.employeeService.addEmployee(newEmployee).subscribe({
+     await this.employeeService.addEmployee(newEmployee).subscribe({
         next: (res) => {
           this.newEmployeeId = newEmployee.id;
           this.responseData = res;
           this.newEmployeeId = this.responseData.id;
+          if(this.roles.length==0)
+            {
+              this.showSuccessSnackBar('העובד נוסף בהצלחה', 'סגור');
+              this.dialogRef.close();
+            }
           employeeData.roles.forEach((role: any, index: number) => {
             let newEmployeeRole: EmployeeRoles = {
               id: 0,
@@ -147,7 +152,9 @@ export class AddEmployeeComponent {
             this.employeeRoleService.addEmployeeRole(newEmployeeRole).subscribe({
               next: (res) => {
                 this.responseData = res;
-                newEmployeeRole.id = this.responseData.id;    
+                newEmployeeRole.id = this.responseData.id;  
+                this.showSuccessSnackBar('העובד נוסף בהצלחה', 'סגור');
+                this.dialogRef.close();  
               },
               error: (err) => {
                 console.error('Error adding employee:', err);
@@ -159,8 +166,7 @@ export class AddEmployeeComponent {
           console.error('Error adding employee:', err);
         }
       });
-      this.showSuccessSnackBar('העובד נוסף בהצלחה', 'סגור');
-      this.dialogRef.close();
+
     } else {
       if (this.hasDuplicateRoles()) {
         // התראה אם קיימים תפקידים כפולים
@@ -177,5 +183,6 @@ export class AddEmployeeComponent {
         return;
       }
     }
+  
   }
 }

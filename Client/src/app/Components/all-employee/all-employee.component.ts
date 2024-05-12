@@ -60,15 +60,15 @@ export class AllEmployeeComponent implements AfterViewInit {
     return (this.paginator.pageIndex + 1) / Math.ceil(this.dataSource.data.length / this.paginator.pageSize) * 100;
   }
   // שיטה לקבלת נתוני העובדים
-  getEmployees() {
-    this.employeeService.getEmployeesList()
+   async getEmployees() {
+    // this.isLoading = true;
+    await this.employeeService.getEmployeesList()
       .subscribe({
         next: (res) => {
-          this.isLoading = false; // הפעלת הטעינה נגמרה
           this.dataSource.data = res; // עדכון מקור הנתונים
+          this.isLoading = false; // הפעלת הטעינה נגמרה
         },
         error: (err) => {
-          this.isLoading = true;
           console.error('Error in hiring employees:', err);
         }
       });
@@ -124,9 +124,9 @@ export class AllEmployeeComponent implements AfterViewInit {
     dialogRef.afterOpened().subscribe(() => {
       this.isLoading = false; // מצב טעינה מסתיים כאשר הדיאלוג נפתח
     });
-    dialogRef.afterClosed().subscribe(()=> {
-      this.getEmployees(); // רענון רשימת העובדים לאחר סגירת הדיאלוג
-    });
+    dialogRef.afterClosed().subscribe(() => {
+       this.getEmployees(); // רענון רשימת העובדים לאחר סגירת הדיאלוג
+    }); 
   }
     // הוספת עובד
   addEmployee() {
@@ -138,7 +138,7 @@ export class AllEmployeeComponent implements AfterViewInit {
       this.isLoading = false; // מצב טעינה מסתיים כאשר הדיאלוג נפתח
     });
     dialogRef.afterClosed().subscribe(() => {
-      this.getEmployees(); // רענון רשימת העובדים לאחר סגירת הדיאלוג
+        this.getEmployees();
     });
   }
   // יציאת הנתונים לקובץ אקסל
